@@ -1,5 +1,8 @@
-two (2) spaces indents, no tabs, maxim um 80 character lines
-strings should always be wrapped with single quotes ('). Double quotes if embedded single quotes
+Commenting should be used liberally. Use online except for those preceding rulesets.
+
+Two (2) spaces indents, no tabs, lines maximum 80 characters.
+
+Strings should always be wrapped with single quotes ('). Double quotes if embedded single quotes.
 
 Numbers less than 1 should have leading zero. No trailing zeros.
 
@@ -11,7 +14,7 @@ Use HSL and variable names for colors.
 
 Wrap lists in parentheses with each item on a line ending in a comma.
 
-Space after colon on map followed by a paren if a list with closing paren on own line followed by a semicolon. Quoted keys.
+Maps should have a space after colon followed by a paren if a list with closing paren on own line followed by a semicolon. Quoted keys.
 
 Rulesets should have an opening brace ({) spaced from the last selector by a single space. Each declaration on its own new line followed by a semicolon. Closing brace on its own line followed by a blank line. Rulesets should be preceded with C-style comments explaining the ruleset with each action of the ruleset noted along with its declaration.
 
@@ -23,5 +26,5 @@ BEM naming should be used. And all names should be lowercase and hyphen delimite
 
 Constants should be all caps and underscore delimited.
 
-Commenting should be used liberally. Use online except for those preceding rulesets.
+
 
