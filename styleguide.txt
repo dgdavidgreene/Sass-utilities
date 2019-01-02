@@ -18,7 +18,7 @@ Maps should have a space after colon followed by a paren if a list with closing 
 
 Rulesets should have an opening brace ({) spaced from the last selector by a single space. Each declaration on its own new line followed by a semicolon. Closing brace on its own line followed by a blank line. Rulesets should be preceded with C-style comments explaining the ruleset with each action of the ruleset noted along with its declaration.
 
-Declarations should be ordered by group and then alphabetically within the group. Group order is dimensions, position, overflow, coloring, font.
+Declarations should be ordered by group and then alphabetically within the group. Group order is dimensions, position, overflow and whitespace, coloring, font.
 
 Nesting should be limited and no more than 3 levels. Psuedo elements and classes should be nested.
 
