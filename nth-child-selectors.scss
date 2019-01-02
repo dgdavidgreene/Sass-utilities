@@ -1,0 +1,58 @@
+@mixin valid-quantity($quantity) {
+  @if type-of($quantity) != 'number' {
+    @error 'The "quantity" parameter must be a number!';
+  }
+  @if not(unitless($quantity)) {
+    @error 'The "quantity" parameter must not have a unit!';
+  }
+  @if $quantity < 0 {
+    @error 'The "quantity" parameter must be at least 0!';
+  }
+}
+
+@mixin has-nth($expression, $element: '*') {
+  &:nth-last-child(#{$expression}):first-child,
+  &:nth-last-child(#{$expression}):first-child ~ #{$element} {
+    @content;
+  }
+}
+
+@mixin at-least($quantity, $element: '*') {
+  @include valid-quantity($quantity);
+  @include has-nth('n + #{$quantity}', $element) {
+    @content;
+  }
+}
+
+@mixin at-most($quantity, $element: '*') {
+  @include valid-quantity($quantity);
+  @include has-nth('-n + #{$quantity}', $element) {
+    @content;
+  }
+}
+
+@mixin divisible-by($quantity, $offset: 0, $element: '*') {
+  @include valid-quantity($quantity);
+  @include has-nth('#{$quantity}n + #{$offset}', $element) {
+    @content;
+  }
+}
+
+@mixin has-exactly($quantity, $element: '*') {
+  @include valid-quantity($quantity);
+  @include has-nth('#{$quantity}', $element) {
+    @content;
+  }
+}
+
+@mixin has-odd($element: '*') {
+  @include has-nth('odd', $element) {
+    @content;
+  }
+}
+
+@mixin has-even($element: '*') {
+  @include has-nth('even', $element) {
+    @content;
+  }
+}
