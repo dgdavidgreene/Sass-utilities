@@ -27,4 +27,23 @@ BEM naming should be used. And all names should be lowercase and hyphen delimite
 Constants should be all caps and underscore delimited.
 
 
-
+A primary palette: colors most widely used across all screens and components.
+An accent palette: colors used for the floating action button and interactive elements.
+A warn palette: colors used to convey error state.
+A foreground palette: colors for text and icons.
+A background palette: colors used for element backgrounds.
+    '--background': '#EFF0F4',
+    '--on-background': '#0F0F0F',
+    '--primary': '#389BFF',
+    '--on-primary': '#fff',
+    '--secondary': '#B2B4B7',
+    '--on-secondary': '#fff',
+    '--surface': '#fff',
+    '--on-surface': '#0F0F0F',
+    '--error': '#EB5945',
+    '--on-error': '#fff',
+    '--warning': '#F6BB42',
+    '--on-warning': '#fff'
+    
+    
+    
