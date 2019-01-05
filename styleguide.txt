@@ -1,3 +1,5 @@
+main.scss should start with: @charset 'UTF-8';
+
 Commenting should be used liberally. Use online except for those preceding rulesets. Use /// for each line.
 
 Two (2) spaces indents, no tabs, lines maximum 80 characters.
